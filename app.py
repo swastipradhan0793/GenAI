@@ -11,16 +11,16 @@ import pickle
 # print("Files:", os.listdir())
 
 # Load the model
-model = load_model('Modeling/model.h5')
+model = load_model('model.h5')
 
 # Load the encoder and scaler 
-with open('Modeling/lable_encoder_gender.pkl', 'rb') as file:
+with open('lable_encoder_gender.pkl', 'rb') as file:
     lable_encoder_geo = pickle.load(file)
 
-with open('Modeling/onehot_encoder_geo.pkl', 'rb') as file:
+with open('onehot_encoder_geo.pkl', 'rb') as file:
     one_hot_encoder_geo = pickle.load(file)
 
-with open("Modeling/scaler_X_train.pkl", 'rb') as file:
+with open("scaler_X_train.pkl", 'rb') as file:
     scaler = pickle.load(file)
 
 
